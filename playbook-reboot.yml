@@ -1,0 +1,8 @@
+# Playbook to restart System
+-
+  name: Reboot all devices
+  hosts: all
+  tasks:
+    -
+      name: "reboot device"
+      command: sudo /sbin/reboot -r
