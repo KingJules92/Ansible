@@ -1,0 +1,8 @@
+# Playbook to run a script on hosts
+-
+  name: Execute a script in the given hosts
+  hosts: web_nodes
+  tasks:
+    -
+      name: Run this script
+      script: /path/to/script.sh

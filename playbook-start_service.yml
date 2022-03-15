@@ -1,0 +1,9 @@
+-
+  name: Start a specific service
+  hosts: all
+  tasks:
+    -
+      name: Start httpd service
+      service:
+        name: httpd
+        state: started
