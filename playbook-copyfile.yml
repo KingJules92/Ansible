@@ -1,0 +1,9 @@
+# Playbook to copy a file from the controller to hosts
+-
+  name: Copy a file to all devices
+  hosts: all
+  tasks:
+    - name: copy Files
+      copy:
+        src: /tmp/example.conf
+        dest: /tmp/example.conf
