@@ -1,0 +1,7 @@
+# Simple Playbook to test the Connectivity of all devices
+-
+  name: Connectivity Test
+  hosts: all
+  tasks:
+    - name: Ping Test
+      ping:
